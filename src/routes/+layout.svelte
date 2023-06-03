@@ -1,12 +1,20 @@
 <script>
   import Header from "$lib/components/Header.svelte";
+  import Footer from "$lib/components/Footer.svelte";
   import '$lib/styles/style.scss'
 </script>
 
-<Header />
 
-<main>
-  <slot />
-</main>
+<div id="wrapper">
 
-<footer>Hello, I'm the footer.</footer>
+    <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer />
+</div>
+
+
+

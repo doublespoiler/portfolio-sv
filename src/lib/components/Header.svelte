@@ -1,12 +1,20 @@
 <style>
   header {
-    padding: 1rem;
+    padding: 1rem 3rem;
     background: lightskyblue;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
+    height: 2vh;
   }
-  
+
+  @media only screen and (max-width: 480px)  { 
+    header{
+      min-width: 100vw;
+    }
+    
+  }
+
   ul {
     margin: 0;
     list-style-type: none;
@@ -22,16 +30,16 @@
 
 <!-- COMPONENT Header.svelte -->
 <header>
-  <a href="/">Home</a>
+  <a href="/">home</a>
 
   <nav>
 
     <ul>
       <li>
-        <a href="/blog">Blog</a>
+        <a href="/blog">blog</a>
       </li>
       <li>
-        <a href="/about">About</a>
+        <a href="/about">about</a>
       </li>
 
     </ul>
